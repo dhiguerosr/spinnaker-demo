@@ -1,0 +1,17 @@
+replicaCount: 3
+
+image:
+  name: dhiguerosr/kubernetes-demo
+  pullPolicy: IfNotPresent
+  tag: "1.0.0"
+
+nameOverride: ""
+fullnameOverride: ""
+
+service:
+  type: ClusterIP
+  port: 3000
+
+resources: {}
+
+nodeSelector: {}
